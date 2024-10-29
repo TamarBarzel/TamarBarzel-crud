@@ -105,7 +105,7 @@ const Books = () => {
         <ul>
           {books.map((book) => (
             <li key={book.id}>
-              <strong>{book.title}</strong>by {book.author} index{book.id}
+              <strong>{book.title}</strong> by {book.author} index{book.id}
               <button onClick={() => handleEdit(book)}>edit book</button>
               <button onClick={() => handleDelete(book.id)}>Delete</button>
             </li>
